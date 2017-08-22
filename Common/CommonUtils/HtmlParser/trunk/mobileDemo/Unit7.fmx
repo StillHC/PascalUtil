@@ -1,0 +1,81 @@
+object Form7: TForm7
+  Left = 0
+  Top = 0
+  Caption = 'Form7'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TreeView1: TTreeView
+    Align = alClient
+    Height = 398.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = alTop
+    Height = 41.000000000000000000
+    Width = 384.000000000000000000
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      Align = alClient
+      TabOrder = 0
+      Text = 'http://www.baidu.com'
+      Width = 216.000000000000000000
+      Height = 32.000000000000000000
+      KillFocusByReturn = False
+    end
+    object Button1: TButton
+      Align = alRight
+      Height = 41.000000000000000000
+      Position.X = 311.000000000000000000
+      TabOrder = 1
+      Text = 'Button1'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = Button1Click
+    end
+    object btn1: TButton
+      Align = alRight
+      Height = 41.000000000000000000
+      Position.X = 216.000000000000000000
+      TabOrder = 2
+      Text = 'btn1'
+      Trimming = ttCharacter
+      Width = 95.000000000000000000
+      OnClick = btn1Click
+    end
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+    Align = alTop
+    Height = 128.000000000000000000
+    Position.Y = 41.000000000000000000
+    TabOrder = 2
+    Width = 384.000000000000000000
+  end
+  object IdHTTP1: TIdHTTP
+    AllowCookies = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = -1
+    Request.ContentRangeStart = -1
+    Request.ContentRangeInstanceLength = -1
+    Request.Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.Ranges.Units = 'bytes'
+    Request.Ranges = <>
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 56
+    Top = 320
+  end
+end
